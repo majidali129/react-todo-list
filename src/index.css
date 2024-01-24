@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    .transit{
+        @apply transition-all ease-in-out duration-300
+    }
+    .icon-wrapper{
+        @apply flex items-center justify-center py-1 bg-transparent  hover:bg-sky-950 transit hover:*:text-slate-50 text-center w-6 h-6 rounded-md *:text-slate-700 *:w-4 *:h-4 cursor-pointer
+    }
+}
+
+@layer components {
+    .primary-btn{
+        @apply bg-sky-600 hover:bg-sky-700 text-sky-50 md:text-lg md:py-1.5 md:px-8 flex items-center justify-center outline outline-1 outline-offset-[2px] transit   outline-sky-600 rounded-full;
+    }
+    .task-list-style::-webkit-scrollbar{
+        display: none;
+    }
+}
