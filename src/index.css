@@ -17,7 +17,10 @@
 
 @layer components {
     .primary-btn{
-        @apply bg-sky-600 hover:bg-sky-700 transition  text-sky-50 md:text-lg md:py-1.5 md:px-8 flex items-center justify-center outline outline-2 outline-offset-[2px] transit   outline-sky-600 rounded-full ;
+        @apply bg-sky-600 transition  text-sky-50 md:text-lg md:py-1.5 md:px-8 flex items-center justify-center outline outline-2 outline-offset-[2px] transit   outline-sky-600 rounded-full ;
+    }
+    .primary-btn:not(.active){
+        @apply hover:bg-sky-700
     }
     .task-list-style::-webkit-scrollbar{
         display: none;
