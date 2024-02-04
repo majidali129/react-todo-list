@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 
 
-const Button = ({children}) => {
+const Button = ({children, onClick, active}) => {
   return (
-    <button className="primary-btn">{children}</button>
+    <button className={`primary-btn ${active? 'active': ''}`} onClick={onClick}>{children}</button>
   )
 }
 
